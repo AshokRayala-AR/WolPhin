@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 11px;
+    font-family: 'Roboto Slab', serif; 
+}
+.wrapper{
+    display: flex;
+    height: 96vh;
+    margin: 1em;
+    
+        /* border: 1px solid red; */
+}
+h3{
+    font-weight: 500;
+    letter-spacing: .25rem;
+    padding: 0;
+    margin: 0;
+}
+h4{
+    padding-bottom: 0;
+    margin-bottom: 0;
+
+}
+.image-background{
+    width: 2rem;
+    height: 2rem;
+    background-color: rgb(218, 218, 218);
+    border-radius: 100%;
+    position: relative;
+}
+
+.left-arrow-bg{
+    background-color: rgba(211,186,167,255);
+    margin-bottom: 1.1rem;
+}
+
+.firstContainer{
+    max-width: 22%;
+    min-width: 330px;
+    max-height: 100% ;
+    min-height: 100%;
+    background-color: rgba(243,243,243,255);
+    padding: 3rem 2rem 3rem 1rem ;
+    margin: auto;
+    overflow-y: scroll;
+    border-top-left-radius:8px ;
+    border-bottom-left-radius: 8px;
+    /* border: 1px solid blue; */
+}
+.firstContainer{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.firstContainer::-webkit-scrollbar{
+    display: none;
+}
+
+.firstDiv{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+}
+
+.icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0 2rem 0;
+}
+
+.icon-img{
+    width: 1.2rem;
+    border-radius: 100%;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+.secondDiv ul{
+list-style-type:none ;
+padding-left: 0;
+margin-left: 0;
+}
+.thirdDiv p{
+line-height: 1.1rem;
+}
+.fourthDiv button{
+    padding: .5rem;
+    margin: .2rem;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-top: 2rem;
+}
+.btn-one{
+    background-color: rgba(211,186,167,255);
+    border: none;
+    color:white;
+    
+}
+.btn-two{
+    color:rgb(219, 110, 20) ;
+    border-color: rgb(219, 110, 20);
+}
+.secondContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-height: 100%;
+    border-top-right-radius:8px ;
+    border-bottom-right-radius: 8px;
+}
+.secondContainer img{
+    height: 60%;
+}
