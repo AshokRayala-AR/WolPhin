@@ -1,17 +1,19 @@
 import statueImage from "./images/statue.png";
-// import rightArrow from "./images/right direction.png";
+import close from "./images/close.png";
 import leftArrow from "./images/left direction.png";
 import share from "./images/share.png";
 import heartImage from "./images/heart .png";
 import views from "./images/views.png";
-import backGround from './images/background.jpeg'
+import backGround from "./images/background.jpeg";
 import "./text.css";
 function Text() {
   return (
     <div className="wrapper">
       <div className="firstContainer">
-        <div className="image-background left-arrow-bg">
-          <img className="icon-img left-arrow" src={leftArrow} alt="left" />
+        <div className="toggler-container">
+          <div className="image-background toggle-btns">
+          <img className="icon-img close" src={close} alt="close" />
+          </div>
         </div>
         <h3>MAITREYA BUDDHA IN GESTURE OF FEARLESSNESS</h3>
         <h3 className="abhaya-text">(ABHAYA MUDRA)</h3>
@@ -63,7 +65,18 @@ function Text() {
           <button className="btn-two">SOUVENIR</button>
         </div>
       </div>
-      <div className="secondContainer" style={{backgroundImage : `url(${backGround})`, backgroundRepeat: 'no-repeat',backgroundSize:'cover'}}>
+      <div
+        className="secondContainer"
+        style={{
+          backgroundImage: `url(${backGround})`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+        }}
+      >
+        <div className="image-background toggle-btns close-btn">
+          
+          <img className="icon-img left-arrow" src={leftArrow} alt="left" />
+        </div>
         <img src={statueImage} alt="image" />
       </div>
     </div>
