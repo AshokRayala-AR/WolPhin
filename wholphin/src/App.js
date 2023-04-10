@@ -1,10 +1,23 @@
-import Text from './text'
-import './App.css';
+import { useState } from "react";
+import Text from "./text";
+import ImageComponent from "./image";
+import "./text.css";
+import "./App.css";
 
 function App() {
+  const [toggler, setToggler] = useState(true);
   return (
     <div className="App">
-      <Text></Text>
+      <div className="wrapper">
+        {toggler ? (
+          <>
+            <Text setToggler= {setToggler}/>
+            <ImageComponent/>
+          </>
+        ) : (
+          <ImageComponent setTogglerNew= {setToggler}/>
+        )}
+      </div>
     </div>
   );
 }
