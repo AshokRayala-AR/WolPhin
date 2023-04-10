@@ -9,7 +9,7 @@ function Text(props) {
   const closeHandler = () => { 
        props.setToggler(false) ;
   }
-  console.log(props.setToggler)
+  
   return ( 
     <div className="firstContainer">
       <div className="toggler-container">
