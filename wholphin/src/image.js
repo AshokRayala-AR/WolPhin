@@ -4,7 +4,7 @@ import statueImage from "./images/statue.png";
 import "./text.css";
 function imageComponent(props) {
   const openHandler = () => {
-    props.setTogglerNew(true);
+    props.setToggler(true);
   };
   return (
     <div

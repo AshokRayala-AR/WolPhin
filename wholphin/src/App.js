@@ -6,16 +6,17 @@ import "./App.css";
 
 function App() {
   const [toggler, setToggler] = useState(true);
+  
   return (
     <div className="App">
       <div className="wrapper">
         {toggler ? (
           <>
-            <Text setToggler= {setToggler}/>
+            <Text setToggler={setToggler}  />
             <ImageComponent/>
           </>
         ) : (
-          <ImageComponent setTogglerNew= {setToggler}/>
+          <ImageComponent setToggler= {setToggler}/>
         )}
       </div>
     </div>

@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html{
+  scroll-behavior: smooth;
+}
 body {
   font-size: 11px;
   font-family: "Roboto Slab", serif;
@@ -11,7 +14,7 @@ body {
   display: flex;
   height: 96vh;
   margin: 1em;
-
+transition-duration: 2000ms;
   /* border: 1px solid red; */
 }
 
@@ -46,15 +49,14 @@ h4 {
   overflow-y: scroll;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
-  /* border: 1px solid blue; */
 }
-.firstContainer {
+/* .firstContainer {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
 .firstContainer::-webkit-scrollbar {
   display: none;
-}
+} */
 
 .firstDiv {
   width: 60%;
@@ -84,9 +86,6 @@ h4 {
 .close {
   width: 20px;
   height: 20px;
-  /* position: absolute; */
-  /* top: 0; */
-  /* background-color:rgba(181,122,80,255) ; */
 }
 .close-btn {
   position: absolute;
@@ -131,7 +130,15 @@ h4 {
 .secondContainer img {
   height: 60%;
 }
-
+.moreText{
+  display: none;
+}
+.readMore, .readLess {
+  /* margin: 1em 0; */
+  padding: 1em 0;
+  border:none ;
+  color: rgb(241, 72, 72);
+}
 @media screen and (max-width: 825px) {
   .wrapper {
     display: flex;
